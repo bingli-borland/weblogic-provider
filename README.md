@@ -1,0 +1,1 @@
+Weblogic provider plugin to assert user by http header

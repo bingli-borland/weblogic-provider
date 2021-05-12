@@ -1,4 +1,4 @@
-package com.yufu.plugin.weblogic;
+package com.wls1036.plugin.weblogic;
 
 import java.util.HashMap;
 
