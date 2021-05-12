@@ -585,13 +585,13 @@ public class SecurityServlet extends HttpServlet {
 - 测试
 
 ```bash
-➜  curl -v http://47.111.230.1:7001/definetool/security
+➜  curl -v http://192.168.1.23:7001/definetool/security
 
-*   Trying 47.111.230.1...
+*   Trying 192.168.1.23...
 * TCP_NODELAY set
-* Connected to 47.111.230.1 (47.111.230.1) port 7001 (#0)
+* Connected to 192.168.1.23 (192.168.1.23) port 7001 (#0)
 > GET /definetool/security HTTP/1.1
-> Host: 47.111.230.1:7001
+> Host: 192.168.1.23:7001
 > User-Agent: curl/7.54.0
 > Accept: */*
 > 
@@ -605,13 +605,13 @@ public class SecurityServlet extends HttpServlet {
 加上token（token名称为YUFU_REMOTE_USER)定义在配置文件里
 
 ```bash
-➜ curl -v http://47.111.230.1:7001/definetool/security -H 'YUFU_REMOTE_USER:helen'
+➜ curl -v http://192.168.1.23:7001/definetool/security -H 'YUFU_REMOTE_USER:helen'
 
-*   Trying 47.111.230.1...
+*   Trying 192.168.1.23...
 * TCP_NODELAY set
-* Connected to 47.111.230.1 (47.111.230.1) port 7001 (#0)
+* Connected to 192.168.1.23 (192.168.1.23) port 7001 (#0)
 > GET /definetool/security HTTP/1.1
-> Host: 47.111.230.1:7001
+> Host: 192.168.1.23:7001
 > User-Agent: curl/7.54.0
 > Accept: */*
 > YUFU_REMOTE_USER:helen
@@ -626,6 +626,6 @@ public class SecurityServlet extends HttpServlet {
 remoteUser:helen
 <br/>Principal Name: helen
 <br/>Authentication Type: CLIENT_CERT
-* Connection #0 to host 47.111.230.1 left intact
+* Connection #0 to host 192.168.1.23 left intact
 <br/>%                                                      
 ```
