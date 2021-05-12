@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE MBeanType SYSTEM "commo.dtd">
+
+<MBeanType
+        Name="YufuSSOIdentityAsserter"
+        DisplayName="YufuSSOIdentityAsserter"
+        Package="com.yufu.plugin.weblogic"
+        Extends="weblogic.management.security.authentication.IdentityAsserter"
+        PersistPolicy="OnUpdate"
+>
+    <MBeanAttribute
+            Name="ProviderClassName"
+            Type="java.lang.String"
+            Writeable="false"
+            Preprocessor="weblogic.management.configuration.LegalHelper.checkClassName(value)"
+            Default="&quot;com.yufu.plugin.weblogic.YufuSSOIdentityAsserterProviderImpl&quot;"
+    />
+
+    <MBeanAttribute
+            Name="Description"
+            Type="java.lang.String"
+            Writeable="false"
+            Default="&quot;得帆云weblogic认证插件&quot;"
+    />
+
+    <MBeanAttribute
+            Name="Version"
+            Type="java.lang.String"
+            Writeable="false"
+            Default="&quot;1.0&quot;"
+    />
+
+    <MBeanAttribute
+            Name="SupportedTypes"
+            Type="java.lang.String[]"
+            Writeable="false"
+            Default="new String[] { &quot;YUFU_REMOTE_USER&quot; }"
+    />
+
+    <MBeanAttribute
+            Name="ActiveTypes"
+            Type="java.lang.String[]"
+            Default="new String[] { &quot;YUFU_REMOTE_USER&quot; }"
+    />
+
+
+    <MBeanAttribute
+            Name="Base64DecodingRequired"
+            Type="boolean"
+            Writeable="false"
+            Default="false"
+            Description="See MyIdentityAsserter-doc.xml."
+    />
+
+</MBeanType>
