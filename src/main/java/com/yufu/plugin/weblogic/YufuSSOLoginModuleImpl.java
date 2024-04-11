@@ -1,4 +1,4 @@
-package com.wls1036.plugin.weblogic;
+package com.yufu.plugin.weblogic;
 
 import java.io.IOException;
 import java.util.Map;

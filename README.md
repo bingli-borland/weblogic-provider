@@ -1,4 +1,5 @@
 需要自开发一个Provider来实现以下需求，在http header中如果包含YUFU_REMOTE_USER，那么value就是用户id，该请求视为已经过认证，就跟OAM的`OAM_REMOTE_USER`实现机制一样
+mvn -Dsoa-version=11.1.1.7 clean install
 
 > 大家可能觉得这种认证机制太弱智了，很容易有安全问题，所以这个方案的前提条件是，前面需要有认证中心的反向代理，不能让用户绕过认证中心进行访问，可以在防火墙层面将请求隔离
 

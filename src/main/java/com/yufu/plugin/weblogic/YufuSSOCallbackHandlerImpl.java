@@ -1,4 +1,4 @@
-package com.wls1036.plugin.weblogic;
+package com.yufu.plugin.weblogic;
 
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.NameCallback;

@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE MBeanType SYSTEM
-        "/Users/asan/document/运维/比亚迪单点登录POC/YuFuAsserter/src/main/java/com/wls1036/plugin/weblogic/commo.dtd">
+<!DOCTYPE MBeanType SYSTEM "commo.dtd">
 
 <MBeanType
         Name="YufuSSOIdentityAsserter"
