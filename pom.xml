@@ -17,6 +17,7 @@
     </properties>
 
     <build>
+        <finalName>YufuSSOIdentityAsserter</finalName>
         <resources>
             <resource>
                 <filtering>true</filtering>
@@ -165,6 +166,8 @@
                                     <jvmarg value="-DpreserveStubs=true"/>
                                     <jvmarg value="-Dverbose=true"/>
                                     <jvmarg value="-Dfile.encoding=UTF-8"/>
+                                    <jvmarg value="-Dsource=1.6"/>
+                                    <jvmarg value="-Dtarget=1.6"/>
                                     <arg value="-preserveStubs"/>
                                 </java>
                                 <move
